@@ -1,12 +1,19 @@
 
 def count_languages(lst): 
     # your code here
+    dic = {}
     for elem in lst:      
         for k,v in elem.items():
             if k == 'language':
-                print(k, v)   
+                dic.setdefault(v ,0)
+                print(k, v)
+            if v in dic:
+                dic[v] += 1 
+                print(dic.values()) 
+            
+
     
-    
+    print (dic) 
 
 if __name__ == "__main__":
     list1 = [
