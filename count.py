@@ -9,7 +9,7 @@ def count_languages(lst):
                 print(k, v)
             if v in dic:
                 dic[v] += 1 
-                print(dic.values()) 
+                print(dic.values(), dic.keys() ) 
             
 
     
