@@ -40,6 +40,6 @@ if __name__ == "__main__":
             ]  
     count_languages(list1)
     real = {'PHP': 3, 'Java': 2, 'C': 4, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1} 
-    print(real)
+    print('respuesta real ->',real)
     # Resuñtado
     #{'PHP': 3, 'Java': 2, 'C': 4, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1} should equal {'PHP': 3, 'Java': 2, 'C': 3, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1}
