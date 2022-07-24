@@ -6,6 +6,7 @@ def count_languages(lst):
         for k,v in elem.items():
             if k == 'language':
                 dic.setdefault(v ,0)
+                print('...')
                 print(k, v)
             if v in dic:
                 dic[v] += 1 
@@ -13,7 +14,7 @@ def count_languages(lst):
             
 
     
-    print (dic) 
+    print ('respuesta func->',dic) 
 
 if __name__ == "__main__":
     list1 = [
@@ -40,6 +41,7 @@ if __name__ == "__main__":
             ]  
     count_languages(list1)
     real = {'PHP': 3, 'Java': 2, 'C': 4, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1} 
-    print('respuesta real ->',real)
+    print('--------------------')
+    print('respuesta real -->',real)
     # Resuñtado
     #{'PHP': 3, 'Java': 2, 'C': 4, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1} should equal {'PHP': 3, 'Java': 2, 'C': 3, 'Ruby': 4, 'JavaScript': 5, 'Python': 2, 'Clojure': 1}
